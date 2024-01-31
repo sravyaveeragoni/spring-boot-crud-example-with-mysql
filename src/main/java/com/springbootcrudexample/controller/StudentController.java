@@ -27,6 +27,7 @@ public class StudentController {
 	@Autowired
 	private StudentRepository studentRepository;
 
+
 	@PostMapping("/create")
 	public Student createStudent1(@RequestBody Student student) {
 		Student createResponse = studentService.save(student);
