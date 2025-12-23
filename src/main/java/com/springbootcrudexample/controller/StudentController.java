@@ -30,8 +30,8 @@ public class StudentController {
 
 	@PostMapping("/create")
 	public Student createStudent1(@RequestBody Student student) {
-		Student createResponse = studentService.save(student);
-		return createResponse;
+		Student response = studentService.save(student);
+		return response;
 	}
 
 /*	@PutMapping("/update")
@@ -88,7 +88,7 @@ public class StudentController {
 /*	@PostMapping("/create")
 	public ModelAndView createStudent(@RequestBody Student student) {
 		ModelAndView modelAndView = new ModelAndView
-		Student createResponse = studentService.save(student);
-		return createResponse;
+		Student response = studentService.save(student);
+		return response;
 	}*/
 }
